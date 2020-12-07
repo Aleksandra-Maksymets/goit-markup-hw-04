@@ -103,7 +103,7 @@ img {
 
 .logo:focus,
 .logo:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Navigation */
@@ -155,13 +155,14 @@ img {
 .contacts-nav .link:focus,
 .contacts-nav .link:hover {
   color: var(--primary-accent-color);
+  cursor: pointer;
 }
 
 .main-nav .current .link {
   color: var(--primary-accent-color);
 }
 .main-nav .current .link:hover {
-  text-decoration: underline;
+  cursor: pointer;
 }
 
 /* Contacts navigation */
@@ -176,6 +177,8 @@ img {
 
 .contacts-nav .link {
   display: block;
+  display: flex;
+  align-items: center;
 
   font-weight: 500;
   font-size: 14px;
@@ -183,6 +186,13 @@ img {
   letter-spacing: 0.02em;
 
   color: var(--secondary-text-color);
+}
+
+.icon-email {
+  width: 16px;
+  height: 12px;
+  margin-right: 10px;
+  fill: currentColor;
 }
 
 /* Main page */
@@ -301,6 +311,20 @@ img {
   letter-spacing: 0.03em;
 
   color: var(--secondary-text-color);
+}
+.thumb {
+  display: flex;
+  background-color: var(--section-background-color);
+  border-radius: 4px;
+  margin-bottom: 30px;
+  height: 120px;
+  justify-content: center;
+  align-items: center;
+}
+
+.thumb > .icon {
+  width: 70px;
+  height: 70px;
 }
 
 /* Section What we do  */
