@@ -473,8 +473,15 @@ img {
 }
 
 .footer .container {
+  display: flex;
+  align-items: baseline;
   padding-top: 60px;
   padding-bottom: 60px;
+}
+
+.footer .adress-wrapper {
+  width: 231px;
+  margin-right: 70px;
 }
 
 .footer .logo {
@@ -497,6 +504,7 @@ img {
   font-style: normal;
   color: var(--secondary-accent-color);
 }
+
 .footer-contact {
   font-weight: 400;
   font-size: 14px;
@@ -513,6 +521,25 @@ img {
 .footer-contact:focus,
 .footer-contact:hover {
   color: var(--primary-accent-color);
+  cursor: pointer;
+}
+
+.social-links-wrapper > p {
+  margin-bottom: 20px;
+
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.14x;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+
+  color: #ffffff;
+}
+
+.footer .icon-thumb {
+  background: rgba(255, 255, 255, 0.1);
+  border: 1px solid transparent;
+  border-radius: 50%;
 }
 
 /* Portfolio page */
